@@ -6,23 +6,23 @@ SquadMC 是基于地图的迫击炮高程和方位角计算器 [*Squad*](http://
 
 ## 链接
 
- * **current version: https://squadmc.ende.pro**
+ * **目前版本: https://squadmc.ende.pro**
  * a version for the game [*Post Scriptum*](http://postscriptumgame.com/): **https://postscriptum.squadmc.ende.pro**
    * shorter url: **https://psmc.ende.pro**
    * I don't own the game myself, so I need feedback from other players
    * check out the [postscriptum branch](https://github.com/Endebert/squadmc/tree/postscriptum) for the code
  * map files are stored in another repository: https://github.com/Endebert/squadmc-maps
-## Features
- * highly accurate elevation and bearing calculation, using heightmaps and mortar shell trajectory function
- * optimized for mobile
- * quick placement and dragging of mortar, target, and FOB markers
- * supports multiple mortar, target, and FOB markers, and allows switching between them
- * min & max mortar range indication
- * max build range and min distance to next FOB indication
- * keypad grid (toggleable)
- * keypad coordinates calculation
- * location markers (toggleable)
- * visible heightmap (toggleable)
+## 特点
+ * 使用高度图和迫击炮弹弹道功能，高度精确的仰角和方位角计算
+ * 针对移动设备进行了优化
+ * 快速放置和拖动迫击炮、目标以及FOB标记
+ * 支持多个迫击炮，目标和FOB标记，并允许在它们之间进行切换
+ * 最大 & 最小迫击炮范围标识
+ * 最大构建范围和到下一个FOB的最小距离
+ * 网格（可切换）
+ * 坐标计算
+ * 位置显示（可切换）
+ * 高度图（可切换）
 
 
 ## installation
@@ -38,7 +38,7 @@ SquadMC 是基于地图的迫击炮高程和方位角计算器 [*Squad*](http://
 ### Cloning repository & installing dependencies
 
 ```
-git clone https://github.com/Endebert/squadmc.git
+git clone https://github.com/MrSeven590/squadmc.git
 cd squadmc
 yarn install
 ```
