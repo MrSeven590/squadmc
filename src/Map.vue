@@ -116,10 +116,10 @@
                 <v-icon style="width: 24px; height: 24px">add</v-icon>
               </v-btn>
               <v-card>
-                <v-card-title style="background-color: #212121">Add Mortar/Target</v-card-title>
+                <v-card-title style="background-color: #212121">添加 迫击炮/目标</v-card-title>
                 <v-divider/>
                 <v-card-text class="px-0">
-                  <div><p align="center">Press icon buttons to cycle through marker colors</p></div>
+                  <div><p align="center">点击图标可设定颜色</p></div>
                   <v-form>
                     <v-container>
                       <v-layout
@@ -138,7 +138,7 @@
                           <v-text-field
                             v-model="placePinVars.mText"
                             :error="placePinVars.mError"
-                            label="Mortar pos"
+                            label="迫击炮坐标"
                             placeholder="A01-3-3-7"
                             @input="placePinVars.mText = formatKP(placePinVars.mText, PIN_TYPE.MORTAR)"
                             style="width: min-content; font-family: monospace"/>
@@ -163,7 +163,7 @@
                           <v-text-field
                             v-model="placePinVars.tText"
                             :error="placePinVars.tError"
-                            label="Target pos"
+                            label="目标坐标"
                             placeholder="B13-3-7"
                             @input="placePinVars.tText = formatKP(placePinVars.tText, PIN_TYPE.TARGET)"
                             style="width: min-content; font-family: monospace"/>
@@ -252,7 +252,7 @@
               max-width="600px">
               <v-card>
                 <v-card-text>
-                  <Changelog/>
+                  <更新日志/>
                 </v-card-text>
                 <v-divider/>
                 <v-card-actions>
@@ -489,8 +489,8 @@
         two-line>
         <v-list-tile @click="openGitHub()">
           <v-list-tile-content>
-            <v-list-tile-title>View Code on GitHub</v-list-tile-title>
-            <v-list-tile-sub-title>Submit issues, contribute, etc.</v-list-tile-sub-title>
+            <v-list-tile-title>查看源代码GitHub</v-list-tile-title>
+            <v-list-tile-sub-title>提交issues, contribute等等</v-list-tile-sub-title>
           </v-list-tile-content>
           <v-list-tile-action>
             <v-badge overlap="">
@@ -519,9 +519,9 @@
             <!--&gt;</v-switch>-->
             <!--</v-list-tile-action>-->
             <v-list-tile-content>
-              <!--<v-list-tile-title>An Error occurred</v-list-tile-title>-->
-              <!--<v-list-tile-sub-title>Please click here and fill out the error report</v-list-tile-sub-title>-->
-              An error occurred. Please click here and fill out the error report.
+              <!--<v-list-tile-title>发生了一个错误</v-list-tile-title>-->
+              <!--<v-list-tile-sub-title>请单击此处并填写错误报告</v-list-tile-sub-title>-->
+              发生错误 请单击此处并填写错误报告
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>warning</v-icon>
@@ -540,7 +540,7 @@
             />
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Advanced Mode</v-list-tile-title>
+            <v-list-tile-title>高级模式</v-list-tile-title>
           </v-list-tile-content>
           <v-list-tile-avatar>
             <v-icon>fast_forward</v-icon>
@@ -590,7 +590,7 @@
                 Set target type
                 <div
                   class="primary px-2 flex font-mono mx-2"
-                  style="border-radius: 2px; margin: 1px">BETA</div>
+                  style="border-radius: 2px; margin: 1px">BETA测试</div>
               </v-list-tile-title>
               <v-list-tile-sub-title>
                 <v-btn-toggle
@@ -613,7 +613,7 @@
             <v-list-tile
               v-if="!secondaryTarget"
               style="background-color: #01579B">
-              Two target markers required
+              需要两个目标标记
               <v-list-tile-content/>
               <v-list-tile-avatar>
                 <v-icon>info</v-icon>
@@ -641,7 +641,7 @@
         <v-list-group>
           <v-list-tile slot="activator">
             <v-list-tile-content>
-              <v-list-tile-title>Map Settings</v-list-tile-title>
+              <v-list-tile-title>地图设置</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile
@@ -649,7 +649,7 @@
             v-if="errorString">
             <v-list-tile-content>
               <v-list-tile-title>{{ errorString }}</v-list-tile-title>
-              <v-list-tile-sub-title>Your settings won't be saved</v-list-tile-sub-title>
+              <v-list-tile-sub-title>您的设置不会被保存</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>warning</v-icon>
@@ -662,7 +662,7 @@
               />
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Show Keypad Grid</v-list-tile-title>
+              <v-list-tile-title>显示网格</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>grid_on</v-icon>
@@ -676,7 +676,7 @@
               />
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Show Heightmap</v-list-tile-title>
+              <v-list-tile-title>显示高度图</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>terrain</v-icon>
@@ -689,7 +689,7 @@
               />
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Show Locations</v-list-tile-title>
+              <v-list-tile-title>显示地点</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>location_on</v-icon>
@@ -702,15 +702,15 @@
               />
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Show all Mortar Circles</v-list-tile-title>
-              <v-list-tile-sub-title>instead of active only</v-list-tile-sub-title>
+              <v-list-tile-title>显示所有迫击炮范围</v-list-tile-title>
+              <v-list-tile-sub-title>而不仅是选中的迫击炮</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>adjust</v-icon>
             </v-list-tile-avatar>
           </v-list-tile>
           <v-list-tile>
-            <div class="pr-3">Pin Size</div>
+            <div class="pr-3">图标大小</div>
             <v-slider
               v-model="pinSize"
               hide-details
@@ -729,7 +729,7 @@
         <v-list-group>
           <v-list-tile slot="activator">
             <v-list-tile-content>
-              <v-list-tile-title>Performance Settings</v-list-tile-title>
+              <v-list-tile-title>性能设定</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile>
@@ -740,7 +740,7 @@
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Delay mil update on drag</v-list-tile-title>
-              <v-list-tile-sub-title>performance hack</v-list-tile-sub-title>
+              <v-list-tile-sub-title>极大提高性能表现</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>timelapse</v-icon>
@@ -753,8 +753,8 @@
               />
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>Hide loading bar</v-list-tile-title>
-              <v-list-tile-sub-title>reduces zoom delay</v-list-tile-sub-title>
+              <v-list-tile-title>隐藏加载条</v-list-tile-title>
+              <v-list-tile-sub-title>减少变焦延迟</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-avatar>
               <v-icon>timelapse</v-icon>
@@ -768,7 +768,7 @@
         <v-list-group :disabled="placedMortars.length + placedFobs.length + placedTargets.length === 0">
           <v-list-tile slot="activator">
             <v-list-tile-content>
-              <v-list-tile-title>Remove Pins</v-list-tile-title>
+              <v-list-tile-title>移除图标</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile v-if="placedMortars.length > 0">
