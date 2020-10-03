@@ -1,10 +1,10 @@
-# SquadMC - The map-based mortar calculator for Squad
+# SquadMC - Squad基于地图的迫击炮计算器
 
-SquadMC is a map-based mortar elevation and bearing calculator for the game [*Squad*](http://joinsquad.com/).
+SquadMC 是基于地图的迫击炮高程和方位角计算器 [*Squad*](http://joinsquad.com/).
 
 ![IPhone 5 Screenshot](./public/img/iphone_screenshot.png)
 
-## Links
+## 链接
 
  * **current version: https://squadmc.ende.pro**
  * a version for the game [*Post Scriptum*](http://postscriptumgame.com/): **https://postscriptum.squadmc.ende.pro**
