@@ -252,7 +252,7 @@
               max-width="600px">
               <v-card>
                 <v-card-text>
-                  <更新日志/>
+                  <Changelog/>
                 </v-card-text>
                 <v-divider/>
                 <v-card-actions>
@@ -548,7 +548,7 @@
         </v-list-tile>
         <v-list-tile>
           <v-list-tile-content style="opacity: 0.7">
-            Place FOBs, multiple markers & targets and create LINE and AREA fire
+            放置FOBs, 多个标记 & 目标和创建 LINE and AREA fire
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -620,7 +620,7 @@
               </v-list-tile-avatar>
             </v-list-tile>
             <v-list-tile>
-              Round Spacing
+              圆形间距
               <v-slider
                 v-model="subTargetSpacing"
                 hide-details
